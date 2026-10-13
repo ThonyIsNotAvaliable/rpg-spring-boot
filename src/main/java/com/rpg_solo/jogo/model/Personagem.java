@@ -2,7 +2,7 @@ package com.rpg_solo.jogo.model;
 
 import java.util.ArrayList;
 
-import org.hibernate.cache.spi.support.AbstractReadWriteAccess.Item;
+import com.rpg_solo.jogo.model.Itens.Item;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -74,6 +74,6 @@ public class Personagem {
         if (this.vida > 100) {
             this.vida = 100;
         }
-        System.out.println("Vida atualizada: " + vida);
+        // System.out.println("Vida atualizada: " + vida);
     }
 }

@@ -2,8 +2,8 @@ package com.rpg_solo.jogo.service;
 
 import org.springframework.stereotype.Service;
 
-import com.rpg_solo.jogo.model.Inimigo;
 import com.rpg_solo.jogo.model.Personagem;
+import com.rpg_solo.jogo.model.Inimigos.Inimigo;
 
 @Service
 public class CombateService {

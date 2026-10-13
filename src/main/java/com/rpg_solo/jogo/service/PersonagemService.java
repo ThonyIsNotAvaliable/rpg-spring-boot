@@ -1,9 +1,9 @@
 package com.rpg_solo.jogo.service;
 
-import org.hibernate.cache.spi.support.AbstractReadWriteAccess.Item;
 import org.springframework.stereotype.Service;
 
 import com.rpg_solo.jogo.interfaces.Usavel;
+import com.rpg_solo.jogo.model.Itens.Item;
 import com.rpg_solo.jogo.model.Personagem;
 
 @Service
@@ -31,10 +31,9 @@ public class PersonagemService {
             throw new Exception("Inventário não contém item");
         }
 
-        // item.usar(personagem);
-
-        if (Usavel.class.isAssignableFrom(item.getClass())) {
-            
+        if (item instanceof Usavel) {
+            Usavel iUsavel = (Usavel) item;
+            iUsavel.usar(personagem);
         }
 
         personagem.getInventario().remove(item);

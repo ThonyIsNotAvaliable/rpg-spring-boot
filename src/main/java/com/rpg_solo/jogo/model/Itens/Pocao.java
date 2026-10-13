@@ -1,6 +1,7 @@
-package com.rpg_solo.jogo.model;
+package com.rpg_solo.jogo.model.Itens;
 
 import com.rpg_solo.jogo.interfaces.Usavel;
+import com.rpg_solo.jogo.model.Personagem;
 
 public class Pocao extends Item implements Usavel {
 
