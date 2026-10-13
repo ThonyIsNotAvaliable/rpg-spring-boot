@@ -1,4 +1,4 @@
-package com.rpg_solo.jogo.model;
+package com.rpg_solo.jogo.model.Inimigos;
 
 import jakarta.persistence.*;
 
